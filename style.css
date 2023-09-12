@@ -26,14 +26,10 @@ h1 {
     text-align: center;
     font-family: 'Fraunces', serif;
     margin-top: 5.5rem;
-    margin-bottom: 3rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-    text-align: center;
-    align-self: center;
-    justify-content: center;
     align-items: center;
-    padding: 2rem;
+    margin-bottom:0 ;
 }
 
 h2 {
@@ -41,9 +37,11 @@ h2 {
     font-family: 'Fraunces', serif;
     font-weight: 700;
     font-size: 2rem;
-    max-width: 15ch;
+    max-width: 14ch;
     margin-top: 3.5rem;
     margin-bottom: 1rem;
+    padding-left: 4rem;
+    
 
 }
 
@@ -80,8 +78,7 @@ body {
     text-align: center; 
     color: var(--Very_dark_grayish_blue); 
     font-size: 18px;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .logo {
@@ -108,6 +105,13 @@ img {
     height: 80vh;
     
     padding:2rem;
+}
+
+.arrow {
+    width: 30px;
+    height: 100px;
+    margin-top: 4rem;
+ 
 }
 
 .graphic {
@@ -213,4 +217,50 @@ footer .logo {
     justify-content: space-around;
     font-weight: 900;
   
+}
+
+@media screen  and (min-width:400px){
+    .header {
+        background-image: url(./images/desktop/image-header.jpg);
+        width: 100vw;
+    }
+
+    .image {
+        width: 50vw;
+    }
+
+    article {
+        max-width: 50vw;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0;
+        min-width: 100vw;
+    
+    }
+
+    .card:nth-child(1) {
+       
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 0;
+        
+        background-color: var(--Dark_moderate_cyan);
+    }
+
+    .gallery_img {
+        max-width: 100%;
+    }
+
+    .testimonials {
+        display: flex;
+       
+    }
+    
+    
+
 }
