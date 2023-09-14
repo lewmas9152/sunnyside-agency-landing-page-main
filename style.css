@@ -74,16 +74,65 @@ body {
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: "Barlow", sans-serif;
   text-align: center;
   color: var(--Very_dark_grayish_blue);
   font-size: 18px;
+  
+  
+
 }
+
+
+/* .container {
+  display: none;
+  
+} */
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  align-items: center;
+  background-color: var(--White);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  width: 85vw;
+}
+
+
+.menu_icon {
+  color: var(--White);
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+
+}
+
+button {
+  background-color: var(--White);
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: var(--Yellow);
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+}
+
 
 .logo {
   position: absolute;
   left: 0;
   margin-left: 2rem;
+  max-width: 100px;
 }
 
 img {
@@ -97,6 +146,7 @@ img {
 .header {
   background-image: url(./images/mobile/image-header.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   height: 80vh;
 
   padding: 2rem;
@@ -178,7 +228,7 @@ footer {
   padding-bottom: 5rem;
 }
 
-footer .logo {
+.footer_logo {
   position: unset;
   color: var(--Dark_desaturated_cyan);
   font-family: "Barlow", sans-serif;
@@ -205,7 +255,32 @@ footer .logo {
   font-weight: 900;
 }
 
-@media screen and (min-width: 400px) {
+
+@media screen and (min-width: 750px) {
+
+  .menu_icon {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    background-color: transparent;
+    margin-top: 0;
+    padding: 0;
+    right: 0; 
+    width: unset;   
+  }
+
+  button {
+    background-color: transparent;
+    color: var(--White);
+
+  }
+
+  button:hover {
+    background-color: var(--White);
+    color: black;
+  }
   .header {
     background-image: url(./images/desktop/image-header.jpg);
     width: 100vw;
@@ -245,4 +320,6 @@ footer .logo {
   .testimonials {
     display: flex;
   }
+
+
 }
