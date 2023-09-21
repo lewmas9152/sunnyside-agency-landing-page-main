@@ -108,6 +108,7 @@ body {
   position: absolute;
   right: 2rem;
   cursor: pointer;
+ 
 }
 
 button {
@@ -143,30 +144,30 @@ img {
   background-image: url(./images/mobile/image-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
-
+  height: 55vh;
+  background-position: 50%;
   padding: 2rem;
 }
 
 .arrow {
   width: 30px;
-  height: 100px;
-  margin-top: 4rem;
+  height: 120px;
+  margin-top: 6rem;
 }
 
 .graphic {
   background-image: url(./images/mobile/image-graphic-design.jpg);
   background-size: cover;
-  height: 100vh;
-  padding-top: 30rem;
+  height: 50vh;
+  padding-top: 25rem;
   color: var(--Dark_desaturated_cyan);
 }
 
 .photography {
   background-image: url(./images/mobile/image-photography.jpg);
   background-size: cover;
-  height: 100vh;
-  padding-top: 29rem;
+  height: 50vh;
+  padding-top: 25rem;
   color: var(--Dark_blue);
 }
 
@@ -248,10 +249,15 @@ footer {
   display: flex;
   color: var(--Dark_desaturated_cyan);
   justify-content: space-around;
+  color: var(--Dark_moderate_cyan);
   font-weight: 900;
 }
 
 @media screen and (min-width: 750px) {
+
+  .logo {
+    max-width: 150px;
+  }
   .menu_icon {
     display: none;
   }
@@ -276,29 +282,38 @@ footer {
   }
   .header {
     background-image: url(./images/desktop/image-header.jpg);
+    background-position: 50%;
     width: 100vw;
+    height: 70vh;
   }
 
+  .header h1 {
+    margin-top: 8rem;
+    font-size: 4rem;
+  }
+
+  .arrow {
+    margin-top: 9rem;
+  }
   .image {
     width: 50vw;
   }
 
   article {
     max-width: 50vw;
-    /* max-height: 70vh; */
-    
-  }
-  .backgroundElement > p {
-   
-    bottom: 0;
-    margin: auto; 
+
   }
 
-  .backgroundElement > h5{
-    padding-top: 5rem;
-    bottom: 0;
-    margin: auto; 
+  .backgroundElement{
+    height: 50vh;
+
   }
+  .backgroundElement > p {
+    margin: auto;
+    
+  }
+
+
 
   .article_p {
     text-align: left;
@@ -324,17 +339,26 @@ footer {
     min-width: 100vw;
   }
 
+  .photography {
+    background-image: url(./images/desktop/image-photography.jpg);
+    padding-top: 25rem;   
+  }
+
+  .graphic {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    padding-top: 25rem; 
+  }
+
   article:nth-child(2) {
     grid-column-start: 1;
     grid-row-start: 1;
   }
 
-  
-
   .graphic_txt {
-    max-width: 40ch;
+    max-width: 43ch;
     align-self: center;
-
+    padding-bottom: 2rem;
+  
   }
 
   .gallery {
@@ -349,9 +373,17 @@ footer {
     max-width: 100%;
   }
 
-
-
   .testimonials {
     display: flex;
+  }
+
+  .nav_elements {
+    justify-content:center;
+   
+    gap: 1rem;
+  }
+
+  .socials img {
+    gap: 1rem;
   }
 }
